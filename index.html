@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Alura Challenge: Decodificador de Texto</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="shortcut icon" type="image/ico" href="img/seguro.ico"/>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <a class="cabecalho__css" href="https://www.alura.com.br/" target="_blank">
+                <img src="img/logo1_alura.svg" alt="Logo da Alura"/>
+            </a>
+        </header>
+
+        <main class="conteudo">
+            <section class="conteudo__entrada">               
+                <textarea class="digitacao" id="area-texto-input" placeholder="Digite aqui o texto que deseja criptografar ou descriptografar..."  minlength="1"></textarea>
+            
+                <div class="botoes">
+                    <button type="button" onclick="codificar()" class="botoes_1">Criptografar</button>
+    
+                    <button type="button" onclick="decodificar()" class="botoes_2">Descriptografar</button>
+
+                    <button type="button" onclick="limpar()" class="botoes_1">Limpar</button>
+                    </div>
+                </div>   
+                
+                <div class="regra"> 
+                    <p><img src="img/exclamation.svg" alt="ponto de interrogacao" class="exclamacao"> <strong>Atenção: </strong>use apenas letras minúsculas e sem acento.</p>
+                </div>
+            </section>
+
+            
+            <section class="digitacao">     
+                <p class="conteudo__saida"> <strong>Nenhuma mensagem foi encontrada!</strong></p>
+
+                <p class="paragrafo"></p> 
+                
+                <button id="copy" type="button" onclick="copiar()" class="botoes_2">Copiar</button> 
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Desenvolvido por <strong> Gilcleide Santos</strong></p>
+            
+            <a href="https://github.com/Gil-snt" target="_blank">
+                <img src="img/github-link.svg" alt="Perfil no GitHub" width="32"/>
+            </a>
+        </footer>
+        
+        <script src="app.js"></script>
+    </body>
+</html>

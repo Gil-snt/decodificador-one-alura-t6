@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-principal: #0A3871; 
+    --cinza-secundario: #495057; 
+    --botao-cinza: #D8DFE8;
+    --subtitulo-cinza: #343A40; 
+    --cor-de-fundo: #F3F5FC;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho{
+    margin: 1% 4%;
+}
+
+.conteudo{
+    margin: 3%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.conteudo__entrada{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 900px;     
+}
+
+#area-texto-input {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor-de-fundo);
+    box-shadow: none;
+    padding: 30px;
+    margin: 18px 0px;
+    resize: none;
+    border: none;
+    outline: none;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    font-size: 1.25rem;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+}
+
+.regra {
+    color: var(--subtitulo-cinza);
+    font-family: "Inter", sans-serif;
+    font-size: 0.87rem;
+    margin: 2% 0%;
+    text-align: start;
+}
+
+.exclamacao {
+    width: 12px;
+}
+
+.digitacao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px; 
+    height: 400px;      
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    color: var(--cinza-secundario);
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-size: 0.94rem;
+    line-height: 100%;
+    margin: 2% 0%;
+}
+
+.botoes_1{
+    width: 250px;
+    height: 68px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 24px;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--azul-principal);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    color: #FFFFFF;
+    margin: 2% 2%;
+}
+
+.botoes_2{
+    width: 250px;
+    height: 68px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 24px;
+    border-radius: 24px;
+    border: none;
+    background-color: var(--botao-cinza);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    color: var(--azul-principal);
+    margin: 2% 2%;
+}
+
+.conteudo__saida {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px; 
+    height: 400px;   
+    border-radius: 32px;
+    background-color: var(--botao-letra-branca);
+    text-align: center;
+    font-size: 19px;
+    line-height: 100%;
+    margin: 2% 0%;
+}
+
+.rodape {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    position: unset;
+    bottom: 0;
+    width: 100%;  
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){ 
+    tablet
+    .conteudo {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .conteudo__entrada{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho{
+        margin: 5%;
+    }
+
+    #area-texto-input {
+        background-color: var(--cor-de-fundo);
+        box-shadow: none;
+        padding: 10px;
+        resize: none;
+        border: none;
+        outline: none;
+        width: 350px;
+        height: 300px;
+        overflow: hidden;
+        font-size: 1.25rem;
+        font-family: "Inter", sans-serif;
+        text-align: left;
+    }
+
+    .botoes_1{
+        display: flex;
+        font-size: 0.9rem; 
+        justify-content: center;
+    } 
+
+
+    .botoes_2{
+        font-size: 0.9rem;
+    }
+
+    .conteudo__saida {
+        width: 350px; 
+    }
+
+    .rodape {
+        font-family: "Inter", sans-serif;
+        font-size: 0.75rem;
+        position:unset; 
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px){ 
+    .conteudo {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .conteudo__entrada{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .cabecalho{
+        margin: 5%;
+    }
+
+    #area-texto-input {
+        width: 250px;
+        margin: 1% 5%;
+    }
+
+    .botoes_1{
+        display: flex;
+        font-size: 0.9rem; 
+        justify-content: center;
+    } 
+
+
+    .botoes_2{
+        font-size: 0.9rem;
+    }
+
+    .conteudo__saida {
+        width: 250px; 
+    }
+
+    .rodape {
+        padding-top: 80px;
+    }
+}
